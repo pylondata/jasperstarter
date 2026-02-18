@@ -421,27 +421,27 @@ limitations under the License.
     <dependency>
         <groupId>net.sf.jasperreports</groupId>
         <artifactId>jasperreports</artifactId>
-        <version>6.18.1</version>
+        <version>7.0.1</version>
     </dependency>
     <dependency>
         <groupId>net.sf.jasperreports</groupId>
         <artifactId>jasperreports-fonts</artifactId>
-        <version>6.18.1</version>
+        <version>7.0.1</version>
     </dependency>
     <dependency>
         <groupId>net.sf.jasperreports</groupId>
         <artifactId>jasperreports-functions</artifactId>
-        <version>6.18.1</version>
+        <version>7.0.1</version>
     </dependency>
     <dependency>
         <groupId>net.sf.jasperreports</groupId>
         <artifactId>jasperreports-chart-customizers</artifactId>
-        <version>6.18.1</version>
+        <version>7.0.1</version>
     </dependency>
     <dependency>
         <groupId>net.sf.jasperreports</groupId>
         <artifactId>jasperreports-chart-themes</artifactId>
-        <version>6.18.1</version>
+        <version>7.0.1</version>
     </dependency>
     <!-- END JasperStarter Dependencies -->
 
@@ -725,7 +725,7 @@ limitations under the License.
     <dependency>
         <groupId>net.sf.jasperreports</groupId>
         <artifactId>jasperreports-metadata</artifactId>
-        <version>6.18.1</version>
+        <version>7.0.1</version>
         <scope>compile</scope>
     </dependency>
     <dependency>
