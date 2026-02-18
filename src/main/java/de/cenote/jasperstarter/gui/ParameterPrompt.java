@@ -128,12 +128,12 @@ public class ParameterPrompt {
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
             dialog = new JDialog(frame);
-        } else if (parent instanceof Window) {
-            dialog = new JDialog((Window) parent);
-        } else if (parent instanceof Frame) {
-            dialog = new JDialog((Frame) parent);
-        } else if (parent instanceof Dialog) {
-            dialog = new JDialog((Dialog) parent);
+        } else if (parent instanceof Window window) {
+            dialog = new JDialog(window);
+        } else if (parent instanceof Frame frame1) {
+            dialog = new JDialog(frame1);
+        } else if (parent instanceof Dialog dialog1) {
+            dialog = new JDialog(dialog1);
         } else {
             dialog = new JDialog();
         }
@@ -150,8 +150,7 @@ public class ParameterPrompt {
             @Override
             public void windowClosing(WindowEvent we) {
                 // trigger a PropertyChangeEvent
-                optionPane.setValue(new Integer(
-                        JOptionPane.CANCEL_OPTION));
+                optionPane.setValue(Integer.valueOf(JOptionPane.CANCEL_OPTION));
             }
         });
 
@@ -174,7 +173,7 @@ public class ParameterPrompt {
                     } else {
                         // reset to an unused option so next click on the
                         // same button triggers PropertyChangeEvent again
-                        optionPane.setValue(new Integer(JOptionPane.NO_OPTION));
+                        optionPane.setValue(Integer.valueOf(JOptionPane.NO_OPTION));
                     }
                 }
             }

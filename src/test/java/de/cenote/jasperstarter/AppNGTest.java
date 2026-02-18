@@ -305,7 +305,7 @@ public class AppNGTest {
             fail(ex.getCause().getMessage(), ex.getCause());
         }
         // checking the mysql default port
-        assertEquals(config.getDbPort(), new Integer("3306"));
+        assertEquals(config.getDbPort(), Integer.valueOf("3306"));
 
         // starting with db postgres (next modification of parser)
         // create a fresh parser
@@ -347,7 +347,7 @@ public class AppNGTest {
             fail(ex.getCause().getMessage(), ex.getCause());
         }
         // checking the postgres default port
-        assertEquals(config.getDbPort(), new Integer("5432"));
+        assertEquals(config.getDbPort(), Integer.valueOf("5432"));
 
         // starting with db oracle (next modification of parser)
         // create a fresh parser
@@ -409,7 +409,7 @@ public class AppNGTest {
             fail(ex.getCause().getMessage(), ex.getCause());
         }
         // checking the oracle default port
-        assertEquals(config.getDbPort(), new Integer("1521"));
+        assertEquals(config.getDbPort(), Integer.valueOf("1521"));
 
         // starting with csv
         // create a fresh parser
