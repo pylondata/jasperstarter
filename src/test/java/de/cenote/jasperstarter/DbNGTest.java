@@ -24,8 +24,8 @@ import java.util.Map;
 
 import net.sf.jasperreports.engine.data.JRCsvDataSource;
 import net.sf.jasperreports.engine.data.JRXmlDataSource;
-import net.sf.jasperreports.engine.data.JsonDataSource;
-import net.sf.jasperreports.engine.data.JsonQLDataSource;
+import net.sf.jasperreports.json.data.JsonDataSource;
+import net.sf.jasperreports.json.data.JsonQLDataSource;
 import static org.testng.Assert.*;
 
 import org.testng.annotations.AfterClass;
