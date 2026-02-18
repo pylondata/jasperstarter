@@ -72,14 +72,30 @@ public class ApplicationClasspath {
      * @throws java.io.IOException if any.
      */
     public static void add(URL url) throws IOException {
-        URLClassLoader systemClassLoader = (URLClassLoader) ClassLoader.getSystemClassLoader();
-        Class<?> urlClassLoaderClass = URLClassLoader.class;
+        ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
+
+        // In Java 9+, the system class loader is no longer a URLClassLoader
+        // Try to use reflection to add to URLClassPath directly
         try {
-            Method method = urlClassLoaderClass.getDeclaredMethod("addURL", parameterTypes);
+            // For Java 9+ with module system
+            if (!(systemClassLoader instanceof URLClassLoader)) {
+                // Use the thread context classloader or create a new URLClassLoader
+                Thread.currentThread().setContextClassLoader(
+                    new URLClassLoader(
+                        new URL[]{url},
+                        Thread.currentThread().getContextClassLoader()
+                    )
+                );
+                return;
+            }
+
+            // For Java 8 and earlier
+            URLClassLoader urlClassLoader = (URLClassLoader) systemClassLoader;
+            Method method = URLClassLoader.class.getDeclaredMethod("addURL", parameterTypes);
             method.setAccessible(true);
-            method.invoke(systemClassLoader, new Object[]{url});
+            method.invoke(urlClassLoader, new Object[]{url});
         } catch (Exception e) {
-            throw new IOException("Error, could not add URL to system classloader!");
+            throw new IOException("Error, could not add URL to system classloader: " + e.getMessage(), e);
         }
     }
 

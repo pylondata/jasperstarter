@@ -170,7 +170,7 @@ public class DbNGTest {
       Db instance = new Db();
       JsonDataSource jsonDataSource = instance.getJsonDataSource(config);
       assertTrue(jsonDataSource.next());
-      assertEquals(jsonDataSource.getClass().getCanonicalName(), "net.sf.jasperreports.engine.data.JsonDataSource");
+      assertEquals(jsonDataSource.getClass().getCanonicalName(), "net.sf.jasperreports.json.data.JsonDataSource");
     }
 
     /**
@@ -188,6 +188,6 @@ public class DbNGTest {
       Db instance = new Db();
       JsonQLDataSource jsonDataSource = instance.getJsonQLDataSource(config);
       assertTrue(jsonDataSource.next());
-      assertEquals(jsonDataSource.getClass().getCanonicalName(), "net.sf.jasperreports.engine.data.JsonQLDataSource");
+      assertEquals(jsonDataSource.getClass().getCanonicalName(), "net.sf.jasperreports.json.data.JsonQLDataSource");
     }
 }
