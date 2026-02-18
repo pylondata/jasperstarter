@@ -27,7 +27,7 @@ import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.data.JRCsvDataSource;
 import net.sf.jasperreports.engine.data.JRXmlDataSource;
 import net.sf.jasperreports.json.data.JsonDataSource;
-import net.sf.jasperreports.json.query.JsonQLDataSource;
+import net.sf.jasperreports.json.data.JsonQLDataSource;
 
 import org.apache.commons.lang.StringEscapeUtils;
 
