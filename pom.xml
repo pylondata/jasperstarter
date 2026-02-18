@@ -443,6 +443,21 @@ limitations under the License.
         <artifactId>jasperreports-chart-themes</artifactId>
         <version>7.0.1</version>
     </dependency>
+    <dependency>
+        <groupId>net.sf.jasperreports</groupId>
+        <artifactId>jasperreports-data-adapters</artifactId>
+        <version>7.0.1</version>
+    </dependency>
+    <dependency>
+        <groupId>net.sf.jasperreports</groupId>
+        <artifactId>jasperreports-json</artifactId>
+        <version>7.0.1</version>
+    </dependency>
+    <dependency>
+        <groupId>net.sf.jasperreports</groupId>
+        <artifactId>jasperreports-excel-poi</artifactId>
+        <version>7.0.1</version>
+    </dependency>
     <!-- END JasperStarter Dependencies -->
 
     <!-- START JasperReports OPTIONAL Dependencies
