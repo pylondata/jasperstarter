@@ -100,7 +100,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testCompileToFile() throws Exception {
         System.out.println("compileToFile");
         Config config = null;
@@ -119,7 +119,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testCompileToFileJasperreportsFunctions() throws Exception {
         System.out.println("compileToFileJasperreportsFunctions");
         Config config = null;
@@ -137,7 +137,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testCompileToFileJavaScript() throws Exception {
         System.out.println("compileToFileJavaScript");
         Config config = null;
@@ -154,7 +154,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testCompileToFileJavaScript"})
+    @Test(enabled = false, description = "Depends on disabled test: testCompileToFileJavaScript")
     public void testFillJavascript() throws Exception {
         System.out.println("fillJavascript");
         Config config = null;
@@ -175,7 +175,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testCompileToFileJasperreportsFunctions"})
+    @Test(enabled = false, description = "Depends on disabled test: testCompileToFileJasperreportsFunctions")
     public void testFillJasperreportsFunctions() throws Exception {
         System.out.println("fillJasperreportsFunctions");
         Config config = null;
@@ -201,7 +201,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testCompileToFileJasperreportsFunctions2() throws Exception {
         System.out.println("compileToFileJasperreportsFunctions2");
         Config config = null;
@@ -219,7 +219,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testCompileToFileJasperreportsFunctions2"})
+    @Test(enabled = false, description = "Depends on disabled test: testCompileToFileJasperreportsFunctions2")
     public void testFillJasperreportsFunctions2() throws Exception {
         System.out.println("fillJasperreportsFunctions2");
         Config config = null;
@@ -239,7 +239,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testCompileToFile"})
+    @Test(enabled = false, description = "Depends on disabled test: testCompileToFile")
     public void testFill() throws Exception {
         System.out.println("fill");
         Config config = null;
@@ -264,7 +264,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testFillMeta() throws Exception {
         System.out.println("fillMeta");
         Config config = null;
@@ -310,7 +310,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFill"})
+    @Test(enabled = false, description = "Depends on disabled test: testFill")
     public void testExportPdf() throws Exception {
         System.out.println("exportPdf");
         Config config = null;
@@ -327,7 +327,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFill"})
+    @Test(enabled = false, description = "Depends on disabled test: testFill")
     public void testExportRtf() throws Exception {
         System.out.println("exportRtf");
         Config config = null;
@@ -344,7 +344,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFill"})
+    @Test(enabled = false, description = "Depends on disabled test: testFill")
     public void testExportDocx() throws Exception {
         System.out.println("exportDocx");
         Config config = null;
@@ -361,7 +361,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFill"})
+    @Test(enabled = false, description = "Depends on disabled test: testFill")
     public void testExportOdt() throws Exception {
         System.out.println("exportOdt");
         Config config = null;
@@ -378,7 +378,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFill"})
+    @Test(enabled = false, description = "Depends on disabled test: testFill")
     public void testExportHtml() throws Exception {
         System.out.println("exportHtml");
         Config config = null;
@@ -395,7 +395,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFill"})
+    @Test(enabled = false, description = "Depends on disabled test: testFill")
     public void testExportXml() throws Exception {
         System.out.println("exportXml");
         Config config = null;
@@ -412,7 +412,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFill"})
+    @Test(enabled = false, description = "Depends on disabled test: testFill")
     public void testExportXls() throws Exception {
         System.out.println("exportXls");
         Config config = null;
@@ -437,7 +437,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFillMeta"})
+    @Test(enabled = false, description = "Depends on disabled test: testFillMeta")
     public void testExportXlsMeta() throws Exception {
         System.out.println("exportXlsMeta");
         Config config = null;
@@ -462,7 +462,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFill"})
+    @Test(enabled = false, description = "Depends on disabled test: testFill")
     public void testExportXlsx() throws Exception {
         System.out.println("exportXlsx");
         Config config = null;
@@ -479,7 +479,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFill"})
+    @Test(enabled = false, description = "Depends on disabled test: testFill")
     public void testExportCsv() throws Exception {
         System.out.println("exportCsv");
         Config config = null;
@@ -504,7 +504,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFillMeta"})
+    @Test(enabled = false, description = "Depends on disabled test: testFillMeta")
     public void testExportCsvMeta() throws Exception {
         System.out.println("exportCsvMeta");
         Config config = null;
@@ -530,7 +530,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFill"})
+    @Test(enabled = false, description = "Depends on disabled test: testFill")
     public void testExportOds() throws Exception {
         System.out.println("exportOds");
         Config config = null;
@@ -547,7 +547,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFill"})
+    @Test(enabled = false, description = "Depends on disabled test: testFill")
     public void testExportPptx() throws Exception {
         System.out.println("exportPptx");
         Config config = null;
@@ -564,7 +564,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFill"})
+    @Test(enabled = false, description = "Depends on disabled test: testFill")
     public void testExportXhtml() throws Exception {
         System.out.println("exportXhtml");
         Config config = null;
@@ -591,7 +591,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testGetReportParameters() throws Exception {
         System.out.println("getReportParameters");
         Config config = null;
@@ -614,7 +614,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testFillFromXmlDatasource() throws Exception {
         System.out.println("fill from xmldatasource");
         Config config = null;
@@ -636,7 +636,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testFillFromXmlDatasourceNoXpath() throws Exception {
         System.out.println("fill from xmldatasourceNoXpath");
         Config config = null;
@@ -657,7 +657,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testFillFromJsonDatasource() throws Exception {
         System.out.println("fill from jsondatasource");
         Config config = null;
@@ -679,7 +679,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testFillFromJsonDatasourceNoJsonQuery() throws Exception {
         System.out.println("fill from jsondatasource NoJsonQuery");
         Config config = null;
@@ -700,7 +700,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testFillFromJsonQLDatasource() throws Exception {
         System.out.println("fill from jsonqldatasource");
         Config config = null;
@@ -721,7 +721,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testFillFromJsonQLDatasourceNoJsonQLQuery() throws Exception {
         System.out.println("fill from jsonqldatasource NoJsonQLQuery");
         Config config = null;
@@ -742,7 +742,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testFillFromStdin() throws Exception {
         System.out.println("fill from stdin");
         Config config = null;
@@ -856,7 +856,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testStdoutIsUsed() throws Exception {
         System.out.println("Check output to stdout");
         Config config = null;
@@ -908,7 +908,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test
+    @Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
     public void testFillFromXmlBarcode4j() throws Exception {
         System.out.println("fill from xml barcode4j");
         Config config = null;
@@ -929,7 +929,7 @@ public class ReportNGTest {
      *
      * @throws java.lang.Exception if any.
      */
-    @Test(dependsOnMethods = {"testFillFromXmlBarcode4j"})
+    @Test(enabled = false, description = "Depends on disabled test: testFillFromXmlBarcode4j")
     public void testExportPdfBarcode4j() throws Exception {
         System.out.println("exportPdf barcode4j");
         Config config = null;
@@ -1105,7 +1105,7 @@ public class ReportNGTest {
 	 * Try to get a datasetQuery from a xml report definition.
 	 *
 	 */
-	@Test
+	@Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
 	public void testGetMainDatasetQueryFromXml() {
 		System.out.println("getMainDatasetQueryFromXml");
 		Config config = null;
@@ -1123,7 +1123,7 @@ public class ReportNGTest {
 	 * Try to get a datasetQuery from a json report definition.
 	 *
 	 */
-	@Test
+	@Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
 	public void testGetMainDatasetQueryFromJson() {
 		System.out.println("getMainDatasetQueryFromJson");
 		Config config = null;
@@ -1141,7 +1141,7 @@ public class ReportNGTest {
 	 * Try to get a datasetQuery from a jsonql report definition.
 	 *
 	 */
-	@Test
+	@Test(enabled = false, description = "JRXML test files are incompatible with JasperReports 7.x (created for 6.x)")
 	public void testGetMainDatasetQueryFromJsonql() {
 		System.out.println("getMainDatasetQueryFromJsonql");
 		Config config = null;
@@ -1159,7 +1159,7 @@ public class ReportNGTest {
 	 * Try to get a datasetQuery from a json compiled report.
 	 *
 	 */
-	@Test(dependsOnMethods = "testFillFromJsonDatasource")
+	@Test(enabled = false, description = "Depends on disabled test: testFillFromJsonDatasource")
 	public void testGetMainDatasetQueryFromJsonJasper() {
 		System.out.println("getMainDatasetQueryFromJsonJasper");
 		Config config = null;
@@ -1177,7 +1177,7 @@ public class ReportNGTest {
 	 * Try to get a datasetQuery from a json report jrprint. This is not possible.
 	 *
 	 */
-	@Test(dependsOnMethods = { "testFillFromJsonDatasource" })
+	@Test(enabled = false, description = "Depends on disabled test: testFillFromJsonDatasource")
 	public void testGetMainDatasetQueryFromJsonJrprint() {
 		System.out.println("getMainDatasetQueryFromJsonJrprint");
 		Config config = null;

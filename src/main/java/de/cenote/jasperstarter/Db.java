@@ -195,7 +195,8 @@ public class Db {
             }
         }
 
-        Class.forName(driver);
+        // Use thread context class loader to support Java 9+ where system class loader is not extensible
+        Class.forName(driver, true, Thread.currentThread().getContextClassLoader());
         conn = DriverManager.getConnection(connectString, user, passwd);
 
         return conn;
